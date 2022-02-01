@@ -3,6 +3,6 @@ resource "aws_subnet" "subnet1-public" {
     public_subnet1_cidr = "10.1.1.0/24"
 
     tags = {
-        Name = "${var.public_subnet1_name}"
+        Name = "public_subnet1"
     }
 }
