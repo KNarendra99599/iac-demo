@@ -6,10 +6,8 @@ resource "aws_vpc" "main" {
     Name = "demo-vpc"
     Purpose = "Jenkins"
   }
-}
-
-resource "aws_vpc" "main" {
-  cidr_block       = "172.31.0.0/16"
+  
+    cidr_block       = "172.31.0.0/16"
   instance_tenancy = "default"
 
   tags = {
@@ -17,3 +15,5 @@ resource "aws_vpc" "main" {
     Purpose = "Jenkins"
   }
 }
+
+ 
